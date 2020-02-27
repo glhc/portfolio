@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Spartan:400,500&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 .App {
   text-align: center;
+  width: 100%;
 }
 
 .App-logo {
@@ -54,6 +65,8 @@ $violet:    #6c71c4;
 $blue:      #268bd2;
 $cyan:      #2aa198;
 $green:     #859900;
+
+/* mixin be like a function */
 @mixin rebase($rebase03,$rebase02,$rebase01,$rebase00,$rebase0,$rebase1,$rebase2,$rebase3) 
 {
     background-color:$rebase03;
@@ -66,10 +79,43 @@ $green:     #859900;
     a, a:active, a:visited, code.url { color: $accent; }
     h1,h2,h3,h4,h5,h6 {color:$accent}
 }
+
 /* light is default mode, so pair with general html definition */
-html, .light { @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)}
-.dark  { @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3)}
-html * {
-    color-profile: sRGB;
-    rendering-intent: auto;
+html, .dark  {
+  @include rebase($base03,$base02,$base01,$base00,$base0,$base1,$base2,$base3);
 }
+
+.light {
+  @include rebase($base3,$base2,$base1,$base0,$base00,$base01,$base02,$base03)
+}
+
+.landing {
+  height: 100vh;
+  display: grid;
+  font-family: "Spartan";
+  font-size: 3rem;
+  font-weight: extra-bold;
+
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+
+  /* Put the sentences in the middle */
+  p {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+  }
+  p:nth-child(1) {
+    grid-row: 2 / 3;
+    /* fix name not respecting leading space character */
+    white-space: pre;
+  }
+  p:nth-child(2) {
+    grid-row: 3 / 4;
+  }
+
+}
+
+.accent {
+  color: $magenta;
+}
+
