@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/Button';
 
 export default function Landing() {
 
@@ -13,7 +12,7 @@ export default function Landing() {
           I'm an aspiring full-stack web developer.
         </article>
 
-        <Button text="See more" icon="keyboard_arrow_down"/>
+        <i class="material-icons animated infinite bounce" id="down-arrow">keyboard_arrow_down</i>
       </section>
     </>
   );

@@ -125,13 +125,13 @@ html, .dark  {
   }
 
   button {
+    margin-bottom: 10px;
     background-color: $base03;
-    border: solid $magenta 2px;
+    border: solid $magenta 1px;
     border-radius: 1px;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     color: $magenta;
-
 
     display: flex;
     flex-direction: row;
@@ -148,10 +148,21 @@ html, .dark  {
   button:focus {
     outline: none;
   }
+
   margin-bottom: 10px;
+}
+
+#down-arrow {
+  color: $magenta;
+  font-size: 60px;
+  animation-duration: 1.8s;
 }
 
 .accent {
   color: $magenta;
 }
 
+ion-icon {
+  color: $base01;
+
+}
