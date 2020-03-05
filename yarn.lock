@@ -9803,6 +9803,11 @@ sockjs@0.3.19:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
 
+solarized-colors@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/solarized-colors/-/solarized-colors-1.0.4.tgz#1ae62233dfe5e41e9dbb87968ed9c462a599ad5c"
+  integrity sha512-K06Plm1mXPTeBytV26JQjndP1+ExCpAf3ujh97XCCoeT8/1rat4xi/U8p8RnxbCfQZNOkSqiIs+nKLlmddQZCw==
+
 sort-keys@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
