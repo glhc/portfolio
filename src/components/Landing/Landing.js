@@ -9,7 +9,7 @@ export default function Landing() {
           <div>
             Hi, I'm <wbr/><span class="accent" id="name">Patrick Horne</span>.<wbr/>
           </div>
-          I'm an aspiring full-stack web developer.
+          I'm a full-stack web developer.
         </article>
 
         <i class="material-icons animated infinite bounce" id="down-arrow">keyboard_arrow_down</i>
