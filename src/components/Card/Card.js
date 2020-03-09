@@ -28,8 +28,12 @@ export default function Card(props) {
           }
         </p>
         <div className="card-button-container">
-          <a className="card-button" href="#">Visit Site</a>
-          <a className="card-button" href="#">View Code</a>
+          {props.siteUrl &&
+            <a className="card-button" href={props.siteUrl}>Visit Site</a>
+          }
+          {props.codeUrl &&
+            <a className="card-button" href={props.codeUrl}>View Code</a>
+          }
         </div>
       </div>
     </StyledCard>

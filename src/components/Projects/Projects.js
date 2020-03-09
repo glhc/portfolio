@@ -10,6 +10,8 @@ export default function Projects() {
       <Card 
         title={project.title}
         description={project.description}
+        siteUrl={project.siteUrl}
+        codeUrl={project.codeUrl}
       />
     )
   });
