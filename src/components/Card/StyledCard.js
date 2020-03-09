@@ -12,6 +12,8 @@ const StyledCard = styled.article`
   background-clip: border-box;
   min-width: 0;
   margin: 10px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   text-align: left;
 
   .image-holder {
