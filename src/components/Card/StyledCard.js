@@ -22,6 +22,7 @@ const StyledCard = styled.article`
     width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
+    overflow: none;
 
     .no-image {
       margin-top: 4rem;
@@ -57,6 +58,19 @@ const StyledCard = styled.article`
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     user-select: none;
     text-decoration: none;
+    color: ${solarized.base2};
+    font-weight: 500;
+  }
+
+  .card-text {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .card-button-container {
+    display: flex;
+    flex: row nowrap;
+    justify-content: space-between;
   }
 
   

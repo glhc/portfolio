@@ -13,7 +13,6 @@ function App() {
       <SocialButtons />
       <Landing />
       <Projects />
-      <Skills />
     </div>
   );
 }

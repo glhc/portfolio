@@ -27,7 +27,10 @@ export default function Card(props) {
             "la la lalala lal al al al lala lal al la la  la aala"
           }
         </p>
-        <a className="card-button" href="#">See it Live</a>
+        <div className="card-button-container">
+          <a className="card-button" href="#">Visit Site</a>
+          <a className="card-button" href="#">View Code</a>
+        </div>
       </div>
     </StyledCard>
   );
