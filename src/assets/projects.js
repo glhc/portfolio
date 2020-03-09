@@ -3,7 +3,7 @@
 const projects = [
   {
     title: "To-Do List",
-    description: "A stylised, responsive to-do aplpication which can be published to Heroku."
+    description: "A stylised, responsive to-do application which can be published to Heroku."
   },
   {
     title: "RecipeDB",

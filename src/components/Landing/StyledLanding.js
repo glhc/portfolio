@@ -1,8 +1,7 @@
 import styled from 'styled-components';
-import '../../assets/styles/solarized';
+import solarized from 'solarized-colors';
 
-const Landing = styled.section`
-  .landing {
+const StyledLanding = styled.section`
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,11 +37,11 @@ const Landing = styled.section`
 
     button {
       background-color: $base03;
-      border: solid ${magenta} 2px;
+      border: solid ${solarized.magenta} 2px;
       border-radius: 1px;
       font-size: 20px;
       font-weight: 400;
-      color: $magenta;
+      color: ${solarized.magenta};
 
 
       display: flex;
@@ -51,7 +50,7 @@ const Landing = styled.section`
       justify-self: end;
 
       i {
-        color: $magenta;
+        color: ${ solarized.magenta };
         font-size: 33px;
       }
       
@@ -60,8 +59,25 @@ const Landing = styled.section`
     button:focus {
       outline: none;
     }
+
     margin-bottom: 10px;
-}
+
+  #down-arrow {
+    color: ${solarized.magenta};
+    font-size: 60px;
+    animation-duration: 1.8s;
+    position: absolute;
+    bottom: 0.125rem;
+  }
+
+  .accent {
+    color: ${ solarized.magenta };
+  }
+
+  ion-icon {
+    color: $base01;
+
+  }
 `;
 
-export default Landing;
+export default StyledLanding;

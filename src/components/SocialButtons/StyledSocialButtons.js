@@ -2,11 +2,13 @@ import * as solarized from 'solarized-colors';
 import styled from 'styled-components';
 
 const StyledSocialButtons = styled.header`
-  margin-top: 8px;
+  position: sticky;
+  top: 0;
+  padding-top: 8px;
   font-size: 1.9rem;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
 
   ion-icon {
     margin-left: 0.4rem;
@@ -14,8 +16,12 @@ const StyledSocialButtons = styled.header`
     cursor: pointer;
   }
 
-  .social-buttons {
-    margin-right: 4rem;
+  @media (min-width: 576px) {
+    justify-content: flex-end;
+
+    .social-buttons {
+      margin-right: 4rem;
+    }
   }
 `;
 

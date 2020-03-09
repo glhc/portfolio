@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import Portfolio from './components/Portfolio/Portfolio';
+import Projects from './components/Projects/Projects';
 import SocialButtons from './components/SocialButtons/SocialButtons';
 import './App.scss';
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <SocialButtons />
       <Landing />
-      <Portfolio />
+      <Projects />
     </div>
   );
 }

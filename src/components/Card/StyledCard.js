@@ -2,15 +2,32 @@ import styled from 'styled-components';
 import solarized from 'solarized-colors';
 
 const StyledCard = styled.article`
-  border: solid red 2px;
-  height: 20rem;
+  border: solid transparent 1px;
   width: 18rem;
   word-wrap: break-word;
   background-color: ${solarized.base02};
+  border-radius: .25rem;
+  display: flex;
+  flex-direction: column;
+  background-clip: border-box;
+  min-width: 0;
+  margin: 10px;
+  text-align: left;
 
   .image-holder {
     height: 180px;
     background-color: ${solarized.base01};
+    width: 100%;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+
+    .no-image {
+      margin-top: 4rem;
+      margin-left: 4rem;
+      display: inline-block;
+      text-align: center;
+      justify-self: center;
+    }
   }
 
   .card-body {
@@ -22,11 +39,13 @@ const StyledCard = styled.article`
 
   .card-title {
     margin-bottom: .75rem;
+    font-size: 1.125rem;
+    text-anchor: middle;
   }
 
   .card-button {
     border-radius: .25rem;
-    background-color: ${solarized.violet};
+    background-color: ${solarized.magenta};
     border: solid transparent 1px;
     line-height: 1.5rem;
     text-align: center;
