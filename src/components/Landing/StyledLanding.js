@@ -64,10 +64,10 @@ const StyledLanding = styled.section`
 
   #down-arrow {
     color: ${solarized.magenta};
-    font-size: 60px;
+    font-size: 4rem;
     animation-duration: 1.8s;
     position: absolute;
-    bottom: 0.125rem;
+    bottom: 1rem;
   }
 
   .accent {

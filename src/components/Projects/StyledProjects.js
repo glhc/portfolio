@@ -15,6 +15,7 @@ export default styled.section`
       align-items: flex-start;
       align-content: flex-start;
       justify-content: flex-start;
+      padding-left: 3rem;
     }
 
   }
@@ -22,6 +23,7 @@ export default styled.section`
 
   .projects-section-title {
     text-align: center;
+    font-size: 2rem;
 
     @media (min-width: 576px){
       text-align: left;
