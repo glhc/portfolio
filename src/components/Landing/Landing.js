@@ -16,10 +16,10 @@ export default function Landing() {
           <div>
             Hi, I'm <wbr/><span className="accent" id="name">Patrick Horne</span>.<wbr/>
           </div>
-          I'm an aspiring full-stack web developer.
+          I'm a full-stack web developer.
         </article>
 
-        <Button text="See more" icon="keyboard_arrow_down"/>
+        <i class="material-icons animated infinite bounce" id="down-arrow">keyboard_arrow_down</i>
       </section>
     </StyledLanding>
   );

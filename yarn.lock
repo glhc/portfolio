@@ -1731,6 +1731,11 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
+animate.css@^3.7.2:
+  version "3.7.2"
+  resolved "https://registry.yarnpkg.com/animate.css/-/animate.css-3.7.2.tgz#e73e0d50e92cb1cfef1597d9b38a9481020e08ea"
+  integrity sha512-0bE8zYo7C0KvgOYrSVfrzkbYk6IOTVPNqkiHg2cbyF4Pq/PXzilz4BRWA3hwEUBoMp5VBgrC29lQIZyhRWdBTw==
+
 ansi-align@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-2.0.0.tgz#c36aeccba563b89ceb556f3690f0b1d9e3547f7f"
@@ -9797,6 +9802,11 @@ sockjs@0.3.19:
   dependencies:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
+
+solarized-colors@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/solarized-colors/-/solarized-colors-1.0.4.tgz#1ae62233dfe5e41e9dbb87968ed9c462a599ad5c"
+  integrity sha512-K06Plm1mXPTeBytV26JQjndP1+ExCpAf3ujh97XCCoeT8/1rat4xi/U8p8RnxbCfQZNOkSqiIs+nKLlmddQZCw==
 
 sort-keys@^1.0.0:
   version "1.1.2"
