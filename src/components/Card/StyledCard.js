@@ -6,11 +6,11 @@ const StyledCard = styled.article`
   height: 20rem;
   width: 18rem;
   word-wrap: break-word;
+  background-color: ${solarized.base02};
 
   .image-holder {
     height: 180px;
-    background-color: palevioletred;
-    border: solid green 2px;
+    background-color: ${solarized.base01};
   }
 
   .card-body {
@@ -24,6 +24,25 @@ const StyledCard = styled.article`
     margin-bottom: .75rem;
   }
 
+  .card-button {
+    border-radius: .25rem;
+    background-color: ${solarized.violet};
+    border: solid transparent 1px;
+    line-height: 1.5rem;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    padding: .375rem .75rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    user-select: none;
+    text-decoration: none;
+  }
+
+  
+
+  .card-button:hover {
+    background-color: ${solarized.orange};
+  }
 `;
 
 export default StyledCard;

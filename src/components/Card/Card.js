@@ -1,6 +1,9 @@
 import React from "react";
 import StyledCard from "./StyledCard";
 
+/**
+ * Card to display a project.
+ */
 export default function Card(props) {
   return (
     <StyledCard className="card">
