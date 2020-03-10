@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import solarized from 'solarized-colors';
 
 const StyledSkills = styled.section`
-  min-height: 50vh;
+  min-height: 100vh;
 
   .skills-title {
     margin-bottom: 2rem;
@@ -16,12 +16,18 @@ const StyledSkills = styled.section`
     }
   }
 
-  ul {
+  li {
     list-style-type: none;
   }
 
+  .skill-list {
+    margin-left: 5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
   .skill-tag {
-    boder: solid red 2px;
   }
 
   .skill-tag-element-name {
@@ -33,6 +39,14 @@ const StyledSkills = styled.section`
   }
 
   .skill-name {
+  }
+
+  .skill-tag-attribute-name {
+    color: ${solarized.yellow}
+  }
+
+  .skill-tag-attribute-value {
+    color: ${solarized.blue}
   }
 
 `;

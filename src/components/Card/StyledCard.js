@@ -48,7 +48,7 @@ const StyledCard = styled.article`
 
   .card-button {
     border-radius: .25rem;
-    background-color: ${solarized.violet};
+    background-color: ${solarized.magenta};
     border: solid transparent 1px;
     line-height: 1.5rem;
     text-align: center;
