@@ -1,19 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
-import Projects from './components/Projects/Projects';
-import SocialButtons from './components/SocialButtons/SocialButtons';
-import Skills from './components/Skills/Skills';
 import './App.scss';
 
+import SocialButtons from './components/SocialButtons/SocialButtons';
 import Landing from './components/Landing/Landing';
+import Projects from './components/Projects/Projects';
+import Skills from './components/Skills/Skills';
+import About from './components/About/About';
+
 
 function App() {
   return (
-    <div className="App">
+    <>
       <SocialButtons />
       <Landing />
       <Projects />
-    </div>
+      <Skills />
+      <About />
+    </>
   );
 }
 

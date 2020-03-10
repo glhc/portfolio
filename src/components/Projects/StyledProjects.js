@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import solarized from 'solarized-colors';
 
 export default styled.section`
+  text-align: center;
+  min-height: 100vh;
 
   .card-container {
     display: flex;

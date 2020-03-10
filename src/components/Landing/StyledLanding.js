@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import solarized from 'solarized-colors';
 
 const StyledLanding = styled.section`
+    text-align: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
