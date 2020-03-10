@@ -15,7 +15,7 @@ export default function Landing() {
         </article>
 
       </section>
-        <i class="material-icons animated infinite bounce" id="down-arrow">keyboard_arrow_down</i>
+        <i className="material-icons animated infinite bounce" id="down-arrow">keyboard_arrow_down</i>
     </StyledLanding>
   );
 };

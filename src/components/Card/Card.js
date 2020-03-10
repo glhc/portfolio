@@ -11,7 +11,7 @@ export default function Card(props) {
         {props.imageUrl ?
           <img src={props.imageUrl} alt="screenshot of the project"></img>
         :
-        <h3 class="no-image">No Image Found</h3>
+        <h3 className="no-image">No Image Found</h3>
         }
       </div>
       <div className="card-body">
@@ -29,10 +29,10 @@ export default function Card(props) {
         </p>
         <div className="card-button-container">
           {props.siteUrl &&
-            <a className="card-button" href={props.siteUrl}>Visit Site</a>
+            <a className="card-button live" href={props.siteUrl}>Visit Site</a>
           }
           {props.codeUrl &&
-            <a className="card-button" href={props.codeUrl}>View Code</a>
+            <a className="card-button code" href={props.codeUrl}>View Code</a>
           }
         </div>
       </div>

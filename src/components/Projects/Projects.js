@@ -5,13 +5,14 @@ import StyledProjects from './StyledProjects';
 
 
 export default function Projects() {
-  const projectCards = projectData.map(project => {
+  const projectCards = projectData.map((project, index) => {
     return (
       <Card 
         title={project.title}
         description={project.description}
         siteUrl={project.siteUrl}
         codeUrl={project.codeUrl}
+        key={index}
       />
     )
   });

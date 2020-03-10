@@ -48,7 +48,7 @@ const StyledCard = styled.article`
 
   .card-button {
     border-radius: .25rem;
-    background-color: ${solarized.magenta};
+    background-color: ${solarized.violet};
     border: solid transparent 1px;
     line-height: 1.5rem;
     text-align: center;
@@ -59,18 +59,36 @@ const StyledCard = styled.article`
     user-select: none;
     text-decoration: none;
     color: ${solarized.base2};
-    font-weight: 500;
+    font-weight: 400;
+
   }
 
   .card-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     margin-top: 0;
     margin-bottom: 1.5rem;
+
+    @media (min-width: 576px) {
+      height: 5rem;
+    }
+  }
+
+  .card:hover {
+    border: solid red 2px;
+    
+    .card-text {
+      height: unset;
+    }
   }
 
   .card-button-container {
     display: flex;
-    flex: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
+    align-content: space-between;
   }
 
   

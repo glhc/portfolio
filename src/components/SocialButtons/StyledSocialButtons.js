@@ -20,7 +20,7 @@ const StyledSocialButtons = styled.header`
     justify-content: flex-end;
 
     .social-buttons {
-      margin-right: 4rem;
+      margin-right: 3rem;
     }
   }
 `;

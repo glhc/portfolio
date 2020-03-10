@@ -20,13 +20,13 @@ export default function SocialButtons() {
 
   return (
     <StyledSocialButtons>
-      <div class="social-buttons">
+      <div className="social-buttons">
         <ion-icon name="logo-github" onClick={sendToGitHub}></ion-icon>
         <ion-icon name="logo-twitter" onClick={sendToTwitter}></ion-icon>
         <ion-icon name="logo-linkedin" onClick={sendToLinkedIn}></ion-icon>
         <ion-icon name="mail" onClick={sendToEmail}></ion-icon>
       </div>
-      <div class="spacer-right"></div>
+      <div className="spacer-right"></div>
     </StyledSocialButtons>
   );
 };
