@@ -9,7 +9,7 @@ const StyledSkills = styled.section`
     text-align: center;
     font-size: 2rem;
 
-    @media (min-width: 576px){
+    @media (min-width: 576px) {
       text-align: left;
       margin-left: 5rem;
       margin-bottom: 2rem;
@@ -21,10 +21,12 @@ const StyledSkills = styled.section`
   }
 
   .skill-list {
-    margin-left: 5rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
+    @media (min-width: 576px) {
+      margin-left: 5rem;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding: 0;
+    }
   }
 
   .skill-tag {
