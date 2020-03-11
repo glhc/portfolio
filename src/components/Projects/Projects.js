@@ -12,6 +12,7 @@ export default function Projects() {
         description={project.description}
         siteUrl={project.siteUrl}
         codeUrl={project.codeUrl}
+        image={project.image}
         key={index}
       />
     )

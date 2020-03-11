@@ -6,7 +6,8 @@ const projects = [
     description: "An algorithm visualiser that solves generated graphs using " +
     "algorithms like A*, Djikstra's and more. lalalalalallalalalalallalzla apples",
     siteUrl: "https://glhc.github.io/pathfinder",
-    codeUrl: "https://github.com/pathfinder"
+    codeUrl: "https://github.com/glhc/pathfinder",
+    image: `${process.env.PUBLIC_URL}/assets/images/pathfinder.png`
   },
   {
     title: "GA_Chat",

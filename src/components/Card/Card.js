@@ -5,11 +5,12 @@ import StyledCard from "./StyledCard";
  * Card to display a project.
  */
 export default function Card(props) {
+  console.log(props.image);
   return (
     <StyledCard className="card">
       <div className="image-holder">
-        {props.imageUrl ?
-          <img src={props.imageUrl} alt="screenshot of the project"></img>
+        {props.image ?
+          <img className="card-image" src={props.image} alt="screenshot of the project"></img>
         :
         <h3 className="no-image">No Image Found</h3>
         }

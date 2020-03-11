@@ -2,6 +2,8 @@ import React from 'react';
 import StyledSocialButtons from './StyledSocialButtons';
 
 export default function SocialButtons() {
+  console.log(window.pageYOffset);
+
   const sendToGitHub = () => {
     window.open('https://github.com/glhc');
   };

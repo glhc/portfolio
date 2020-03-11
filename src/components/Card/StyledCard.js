@@ -22,7 +22,7 @@ const StyledCard = styled.article`
     width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
     border-top-right-radius: calc(.25rem - 1px);
-    overflow: none;
+    overflow: hidden;
 
     .no-image {
       margin-top: 4rem;
@@ -31,6 +31,10 @@ const StyledCard = styled.article`
       text-align: center;
       justify-self: center;
     }
+  }
+
+  .card-image {
+    width: inherit;
   }
 
   .card-body {
