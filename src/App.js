@@ -9,6 +9,8 @@ import About from './components/About/About';
 
 
 function App() {
+
+
   return (
     <>
       <SocialButtons />
@@ -16,6 +18,7 @@ function App() {
       <Projects />
       <Skills />
       <About />
+      <SocialButtons footer={true}/>
     </>
   );
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 import StyledSocialButtons from './StyledSocialButtons';
 
-export default function SocialButtons() {
-  console.log(window.pageYOffset);
-
+export default function SocialButtons(props) {
   const sendToGitHub = () => {
     window.open('https://github.com/glhc');
   };
@@ -21,7 +19,7 @@ export default function SocialButtons() {
   };
 
   return (
-    <StyledSocialButtons>
+    <StyledSocialButtons className={props.footer && "footer"}>
       <div className="social-buttons">
         <ion-icon name="logo-github" onClick={sendToGitHub}></ion-icon>
         <ion-icon name="logo-twitter" onClick={sendToTwitter}></ion-icon>

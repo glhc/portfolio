@@ -4,7 +4,7 @@ const projects = [
   {
     title: "Pathfinder",
     description: "An algorithm visualiser that solves generated graphs using " +
-    "algorithms like A*, Djikstra's and more. lalalalalallalalalalallalzla apples",
+    "algorithms like A*, Djikstra's and more.",
     siteUrl: "https://glhc.github.io/pathfinder",
     codeUrl: "https://github.com/glhc/pathfinder",
     image: `${process.env.PUBLIC_URL}/assets/images/pathfinder.png`

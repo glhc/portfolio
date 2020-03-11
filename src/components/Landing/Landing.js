@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from '../Button/Button';
 import StyledLanding from './StyledLanding';
 
 export default function Landing() {

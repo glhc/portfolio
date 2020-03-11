@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import solarized from 'solarized-colors';
 
 export default styled.section`
   text-align: center;

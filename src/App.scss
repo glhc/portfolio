@@ -51,3 +51,8 @@ html, .dark  {
 }
 
 
+.footer {
+  @media (min-width: 576px) {
+    display: none !important;
+  }
+}

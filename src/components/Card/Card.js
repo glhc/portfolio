@@ -5,7 +5,6 @@ import StyledCard from "./StyledCard";
  * Card to display a project.
  */
 export default function Card(props) {
-  console.log(props.image);
   return (
     <StyledCard className="card">
       <div className="image-holder">
