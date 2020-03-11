@@ -3,16 +3,17 @@ import solarized from 'solarized-colors';
 
 const StyledSkills = styled.section`
   min-height: 100vh;
+  margin-top: 2rem;
 
   .skills-title {
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
     text-align: center;
     font-size: 2rem;
 
     @media (min-width: 576px) {
       text-align: left;
       margin-left: 5rem;
-      margin-bottom: 2rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -26,6 +27,7 @@ const StyledSkills = styled.section`
       margin-top: 0;
       margin-bottom: 0;
       padding: 0;
+      font-size: 1.125rem
     }
   }
 

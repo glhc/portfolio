@@ -17,7 +17,7 @@ const StyledCard = styled.article`
   text-align: left;
 
   .image-holder {
-    height: 180px;
+    height: 12.5rem;
     background-color: ${solarized.base01};
     width: 100%;
     border-top-left-radius: calc(.25rem - 1px);
