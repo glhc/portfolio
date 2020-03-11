@@ -4,7 +4,7 @@ import StyledLanding from './StyledLanding';
 export default function Landing() {
 
   return (
-    <StyledLanding>
+    <StyledLanding id="landing">
       <section className="landing">
         <article className="text">
           <div>

@@ -20,7 +20,7 @@ export default function Projects() {
 
 
   return (
-    <StyledProjects className="portfolio">
+    <StyledProjects className="projects" id="projects">
       <h2 className="projects-section-title">Projects</h2>
       <div className="card-container">
         {projectCards}

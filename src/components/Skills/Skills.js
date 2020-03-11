@@ -3,7 +3,7 @@ import StyledSkills from "./StyledSkills";
 
 export default function Skills() {
   return (
-    <StyledSkills>
+    <StyledSkills id="skills">
       <h2 className="skills-title">Skills</h2>
       <ul className="skill-list hard-skills">
         <li>

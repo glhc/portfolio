@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledSocialButtons = styled.aside`
   position: relative;
-  padding-top: 8px;
   font-size: 1.9rem;
   display: flex;
   flex-direction: row;
