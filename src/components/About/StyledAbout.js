@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 const StyledAbout = styled.section`
   min-height: 100vh;
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+  }
 
   .about-title {
     margin-bottom: 2rem;
@@ -16,9 +19,11 @@ const StyledAbout = styled.section`
   }
 
   .about-text {
-    width: 18rem;
+    width: 25rem;
     margin: 0 auto;
     word-break: break-word;
+    font-size: 1.1rem;
+    line-height: 1.8rem;
 
     @media (min-width: 576px) {
       text-align: left;

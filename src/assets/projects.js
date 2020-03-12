@@ -17,12 +17,12 @@ const projects = [
   },
   {
     title: "RecipeDB",
-    description: "Suggests recipes based on the recipes that you have at hand.",
+    description: "Suggests recipes based on the ingredients that you have at hand.",
     codeUrl: "https://github.com/glhc/ga_chat"
   },
   {
     title: "To-Do List",
-    description: "A stylised, responsive to-do application which can be published to Heroku.",
+    description: "A stylised, responsive to-do application.",
     siteUrl: "https://glhc.github.io/todo",
     codeUrl: "https://github.com/glhc/todo"
   },

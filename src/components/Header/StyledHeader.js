@@ -12,8 +12,17 @@ const StyledHeader = styled.header`
     justify-content: space-between;
   }
 
+  @media (max-width: 575.98px) {
+    position: absolute;
+    width: 100%;
+    nav { padding-left: 0; }
+    aside {
+      padding-top: 0.3rem;
+    }
+  }
+
   nav {
-    flex-basis: 30%;
+    flex-basis: 23rem;
   }
   aside {
     flex-grow: 1;

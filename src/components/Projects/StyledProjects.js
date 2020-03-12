@@ -4,6 +4,10 @@ export default styled.section`
   text-align: center;
   min-height: 100vh;
 
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+  }
+
   .card-container {
     display: flex;
     flex-direction: row;

@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import StyledScrollGuide from "./StyledScrollGuide";
 import {useScrollPosition} from '@n8tb1t/use-scroll-position';
 
 export default function ScrollGuide(props) {
+
+  const [activeComponent, setActiveComponent] = useState("landing")
 
   const findRelativeSectionPositions = (currentY) => {
     let landingSection = document.getElementById("landing");
@@ -10,23 +12,30 @@ export default function ScrollGuide(props) {
     let skillsSection = document.getElementById("skills");
     let aboutSection = document.getElementById("about");
 
-    let landingPos = landingSection.getBoundingClientRect();
-    let projectPos = projectSection.getBoundingClientRect();
-    let skillsPos = skillsSection.getBoundingClientRect();
-    let aboutPos = aboutSection.getBoundingClientRect();
+    let landingPos = landingSection.getBoundingClientRect().bottom;
+    let projectPos = projectSection.getBoundingClientRect().bottom;
+    let skillsPos = skillsSection.getBoundingClientRect().bottom;
+    let aboutPos = aboutSection.getBoundingClientRect().bottom;
+    
+    if (landingPos > 0) {
+      setActiveComponent('landing');
+    } else if (projectPos > 0) {
+      setActiveComponent('projects');
+    } else if (skillsPos > 0) {
+      setActiveComponent('skills');
+    } else if (aboutPos > 0) {
+      setActiveComponent('about');
+    };
   };
 
   useScrollPosition(({prevPos, currPos}) => {
+    findRelativeSectionPositions();
     console.log(currPos.y);
   }, null, null, true);
 
   const handleNavigateToLanding = () => {
-    let section = document.getElementById("landing");
-    let sectionY = section.getBoundingClientRect().top;
-    console.log('sectionY', sectionY);
-
-    window.scrollBy({
-      top: sectionY,
+    window.scrollTo({
+      top: 0,
       behavior: "smooth"
     });
   };
@@ -34,7 +43,6 @@ export default function ScrollGuide(props) {
   const handleNavigateToProjects = () => {
     let section = document.getElementById("projects");
     let sectionY = section.getBoundingClientRect().top;
-    console.log('sectionY', sectionY);
 
     window.scrollBy({
       top: sectionY,
@@ -45,7 +53,6 @@ export default function ScrollGuide(props) {
   const handleNavigateToSkills = () => {
     let section = document.getElementById("skills");
     let sectionY = section.getBoundingClientRect().top;
-    console.log('sectionY', sectionY);
 
     window.scrollBy({
       top: sectionY,
@@ -56,7 +63,6 @@ export default function ScrollGuide(props) {
   const handleNavigateToAbout = () => {
     let section = document.getElementById("about");
     let sectionY = section.getBoundingClientRect().top;
-    console.log('sectionY', sectionY);
 
     window.scrollBy({
       top: sectionY,
@@ -66,12 +72,12 @@ export default function ScrollGuide(props) {
 
   return (
     <StyledScrollGuide>
-      <div className="nav nav-landing" onClick={handleNavigateToLanding}>Home</div>
-      <div className="nav nav-projects" onClick={handleNavigateToProjects}>
+      <div className={"nav nav-landing " + ( activeComponent === "landing" ? "current-section" : "")} onClick={handleNavigateToLanding}>Home</div>
+      <div className={"nav nav-projects " + ( activeComponent === "projects" ? "current-section" : "")} onClick={handleNavigateToProjects}>
         Projects
       </div>
-      <div className="nav nav-skills" onClick={handleNavigateToSkills}>Skills</div>
-      <div className="nav nav-about" onClick={handleNavigateToAbout}>About</div>
+      <div className={"nav nav-skills " + ( activeComponent === "skills" ? "current-section" : "")} onClick={handleNavigateToSkills}>Skills</div>
+      <div className={"nav nav-about " + ( activeComponent === "about" ? "current-section" : "")} onClick={handleNavigateToAbout}>About</div>
     </StyledScrollGuide>
   );
 }

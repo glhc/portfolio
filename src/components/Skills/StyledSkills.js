@@ -5,6 +5,10 @@ const StyledSkills = styled.section`
   min-height: 100vh;
   margin-top: 2rem;
 
+  @media (min-width: 576px) {
+    padding-top: 3rem;
+  }
+
   .skills-title {
     margin-bottom: 2.2rem;
     text-align: center;
