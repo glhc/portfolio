@@ -20,12 +20,17 @@ const StyledAbout = styled.section`
 
   .about-text {
     width: 25rem;
-    margin: 0 auto;
     word-break: break-word;
     font-size: 1.1rem;
     line-height: 1.8rem;
+    
+    @media (max-width: 575.98px) {
+      padding: 0 2.5rem;
+      width: 100vw;
+    }
 
     @media (min-width: 576px) {
+      
       text-align: left;
       margin-left: 5rem;
       margin-bottom: 2rem;
