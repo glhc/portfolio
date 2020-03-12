@@ -2,9 +2,18 @@ import styled from 'styled-components';
 
 const StyledAbout = styled.section`
   min-height: 100vh;
+  footer {
+    display: none;
+    @media (max-width: 575.98px) {
+      display: block;
+      padding-top: 4rem;
+    }
+  }
+
   @media (min-width: 576px) {
     padding-top: 3rem;
   }
+
 
   .about-title {
     margin-bottom: 2rem;
@@ -27,6 +36,7 @@ const StyledAbout = styled.section`
     @media (max-width: 575.98px) {
       padding: 0 2.5rem;
       width: 100vw;
+      line-height: 1.3rem;
     }
 
     @media (min-width: 576px) {

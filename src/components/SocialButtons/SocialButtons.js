@@ -12,7 +12,7 @@ export default function SocialButtons(props) {
   };
 
   const sendToLinkedIn = () => {
-    window.open("https://linkedin.com/patrickahorne");
+    window.open("https://www.linkedin.com/in/patrickahorne/");
   };
 
   const sendToEmail = () => {
@@ -20,7 +20,9 @@ export default function SocialButtons(props) {
   };
 
   return (
-    <StyledSocialButtons className={props.footer && "footer"}>
+    <StyledSocialButtons className={props.footer && "footer"}
+      id={props.isLanding ? "social-landing-page" : ""}
+    >
       <div className="social-buttons">
         <ion-icon
           name="logo-github"

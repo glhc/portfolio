@@ -69,6 +69,7 @@ const StyledLanding = styled.section`
     animation-duration: 1.8s;
     position: absolute;
     bottom: 1rem;
+    cursor: pointer;
   }
 
   .accent {
@@ -77,7 +78,6 @@ const StyledLanding = styled.section`
 
   ion-icon {
     color: $base01;
-
   }
 `;
 

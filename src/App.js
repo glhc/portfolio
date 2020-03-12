@@ -19,7 +19,6 @@ function App() {
       <Projects />
       <Skills />
       <About />
-      <SocialButtons footer={true}/>
     </>
   );
 }

@@ -30,6 +30,7 @@ const StyledScrollGuide = styled.nav`
       cursor: pointer;
       color: ${solarized.violet};
       border-color: ${solarized.base0} !important;
+      transition: color 1s ease-in-out,background-color 1s ease-in-out,border-color 1s ease-in-out,box-shadow 1s ease-in-out;
     }
   }
 

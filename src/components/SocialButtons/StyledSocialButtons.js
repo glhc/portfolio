@@ -6,6 +6,7 @@ const StyledSocialButtons = styled.aside`
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 1rem;
 
   ion-icon {
     margin-left: 0.4rem;

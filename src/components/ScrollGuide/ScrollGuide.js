@@ -30,6 +30,7 @@ export default function ScrollGuide(props) {
 
   useScrollPosition(({prevPos, currPos}) => {
     findRelativeSectionPositions();
+    props.isLandingPage(currPos.y);
     console.log(currPos.y);
   }, null, null, true);
 
